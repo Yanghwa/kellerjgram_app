@@ -38,10 +38,10 @@ class App extends React.Component {
         require('./assets/images/noPhoto.jpg'),
         require('./assets/images/photoPlaceholder.png')
       ]),
-      Font.loadAsync([
+      Font.loadAsync({
         ...Ionicons.font,
         ...MaterialIcons.font
-      ])
+      })
     ])
   };
   _handleLoadingError = error => {
